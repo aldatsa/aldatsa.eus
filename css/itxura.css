@@ -8,41 +8,92 @@ body {
 	color: #FFF;
 	font-family: "Source Sans Pro",sans-serif;
 }
-.nire-argazkia {
+
+.hasierako-kaxa .nire-argazkia {
 	border-radius: 50%;
 }
-h1.nire-izen-abizenak {
-	font-size: 56px;
+.hasierako-kaxa .nire-izen-abizenak {
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
-h2.nire-ezizena {
-	font-size: 36px;
+.hasierako-kaxa .nire-ezizena {
 	margin-top: 0px;
-	margin-bottom: 40px;
 }
-.izenburua-kaxa {
+.hasierako-kaxa {
 	position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 	text-align: center;
 }
-
-.kontuak img {
+.hasierako-kaxa .kontuak img {
 	margin-left: 5px;
 	margin-right: 5px;
 }
-.kontuak img.twitter {
-    width: 38px;
+
+@media (max-width: 400px) {
+	.hasierako-kaxa .kontuak img.twitter {
+	    width: 28px;
+	}
+	.hasierako-kaxa .kontuak img.github {
+	    width: 26px;
+	}
+	.hasierako-kaxa .kontuak img.launchpad {
+	    width: 24px;
+	}
+	.hasierako-kaxa .kontuak img.transifex {
+		width: 26px;
+		margin-bottom: 2px;
+	}
 }
-.kontuak img.github {
-    width: 36px;
+
+@media (min-width: 400px) {
+	.hasierako-kaxa .kontuak img.twitter {
+	    width: 38px;
+	}
+	.hasierako-kaxa .kontuak img.github {
+	    width: 36px;
+	}
+	.hasierako-kaxa .kontuak img.launchpad {
+	    width: 34px;
+	}
+	.hasierako-kaxa .kontuak img.transifex {
+		width: 36px;
+		margin-bottom: 2px;
+	}
 }
-.kontuak img.launchpad {
-    width: 34px;
+@media (max-width: 768px) {
+	.hasierako-kaxa .nire-izen-abizenak {
+		font-size: 1.5rem;
+	}
+	.hasierako-kaxa .nire-ezizena {
+		font-size: 1rem;
+		margin-bottom: 20px;
+	}
 }
-.kontuak img.transifex {
-	width: 36px;
-	margin-bottom: 2px;
+@media (min-width: 768px) {
+	.hasierako-kaxa .nire-izen-abizenak {
+		font-size: 2rem;
+	}
+	.hasierako-kaxa .nire-ezizena {
+		font-size: 1.5rem;
+		margin-bottom: 20px;
+	}
+}
+@media (min-width: 992px) {
+	.hasierako-kaxa .nire-izen-abizenak {
+		font-size: 2.5rem;
+	}
+	.hasierako-kaxa .nire-ezizena {
+		font-size: 2rem;
+		margin-bottom: 40px;
+	}
+}
+@media (min-width: 1200px) {
+	.hasierako-kaxa .nire-izen-abizenak {
+		font-size: 3.5rem;
+	}
+	.hasierako-kaxa .nire-ezizena {
+		font-size: 2.5rem;
+	}
 }
