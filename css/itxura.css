@@ -2,8 +2,12 @@ body {
 	background-color: #B31B1B;
 	color: #FFF;
 }
+.nire-argazkia {
+	border-radius: 50%;
+}
 h1.nire-izen-abizenak {
 	font-size: 56px;
+	margin-top: 10px;
 	margin-bottom: 10px;
 }
 h2.nire-ezizena {
