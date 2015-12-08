@@ -2,11 +2,14 @@ body {
 	background-color: #B31B1B;
 	color: #FFF;
 }
-h1 {
+h1.nire-izen-abizenak {
 	font-size: 56px;
+	margin-bottom: 10px;
 }
-h2 {
+h2.nire-ezizena {
 	font-size: 36px;
+	margin-top: 0px;
+	margin-bottom: 40px;
 }
 .izenburua-kaxa {
 	position: fixed;
@@ -21,15 +24,15 @@ h2 {
 	margin-right: 5px;
 }
 .kontuak img.twitter {
-    width: 48px;
+    width: 38px;
 }
 .kontuak img.github {
-    width: 44px;
+    width: 36px;
 }
 .kontuak img.launchpad {
-    width: 42px;
+    width: 34px;
 }
 .kontuak img.transifex {
-	width: 46px;
+	width: 36px;
 	margin-bottom: 2px;
 }
