@@ -16,6 +16,20 @@ h2 {
 	text-align: center;
 }
 
-.sare-sozialak img {
+.kontuak img {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.kontuak img.twitter {
     width: 48px;
+}
+.kontuak img.github {
+    width: 44px;
+}
+.kontuak img.launchpad {
+    width: 42px;
+}
+.kontuak img.transifex {
+	width: 46px;
+	margin-bottom: 2px;
 }
