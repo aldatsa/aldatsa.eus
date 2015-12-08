@@ -1,3 +1,13 @@
+body {
+	background-color: #B31B1B;
+	color: #FFF;
+}
+h1 {
+	font-size: 56px;
+}
+h2 {
+	font-size: 36px;
+}
 .izenburua-kaxa {
 	position: fixed;
     top: 50%;
