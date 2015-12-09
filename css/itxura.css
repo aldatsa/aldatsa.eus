@@ -31,13 +31,16 @@ body {
 	margin-right: 5px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 466px) {
 	.hasierako-kaxa .kontuak img.twitter {
 	    width: 28px;
 	}
 	.hasierako-kaxa .kontuak img.github {
 	    width: 26px;
 	}
+    .hasierako-kaxa .kontuak img.stackexchange {
+        width: 20px;
+    }
 	.hasierako-kaxa .kontuak img.launchpad {
 	    width: 24px;
 	}
@@ -47,13 +50,16 @@ body {
 	}
 }
 
-@media (min-width: 400px) {
+@media (min-width: 466px) {
 	.hasierako-kaxa .kontuak img.twitter {
 	    width: 38px;
 	}
 	.hasierako-kaxa .kontuak img.github {
 	    width: 36px;
 	}
+    .hasierako-kaxa .kontuak img.stackexchange {
+        width: 27px;
+    }
 	.hasierako-kaxa .kontuak img.launchpad {
 	    width: 34px;
 	}
