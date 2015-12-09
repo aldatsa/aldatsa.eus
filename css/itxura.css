@@ -68,6 +68,16 @@ body {
 		margin-bottom: 2px;
 	}
 }
+@media (max-width: 515px) {
+    .hasierako-kaxa {
+        width: 80%;
+    }
+}
+@media (min-width: 515px) {
+    .hasierako-kaxa {
+        width: auto;
+    }
+}
 @media (max-width: 768px) {
 	.hasierako-kaxa .nire-izen-abizenak {
 		font-size: 1.5rem;
