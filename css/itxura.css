@@ -76,12 +76,12 @@ body {
 		margin-bottom: 2px;
 	}
 }
-@media (max-width: 515px) {
+@media (max-width: 600px) {
     .hasierako-kaxa {
         width: 80%;
     }
 }
-@media (min-width: 515px) {
+@media (min-width: 600px) {
     .hasierako-kaxa {
         width: auto;
     }
