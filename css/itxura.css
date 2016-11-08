@@ -30,6 +30,17 @@ body {
 	margin-left: 5px;
 	margin-right: 5px;
 }
+.hasierako-kaxa .lantokiak {
+    margin-top: 25px;
+}
+.hasierako-kaxa .lantokiak img.argia {
+    width: 100px;
+}
+.hasierako-kaxa .lantokiak img.iametza {
+    margin-bottom: -12px;
+    margin-left: 15px;
+    width: 150px;
+}
 
 @media (max-width: 466px) {
 	.hasierako-kaxa .kontuak img.twitter {
@@ -52,6 +63,13 @@ body {
 		width: 26px;
 		margin-bottom: 2px;
 	}
+    .hasierako-kaxa .lantokiak img.argia {
+        width: 75px;
+    }
+    .hasierako-kaxa .lantokiak img.iametza {
+        width: 110px;
+        margin-bottom: -9px;
+    }
 }
 
 @media (min-width: 466px) {
