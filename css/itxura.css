@@ -4,138 +4,161 @@
 }
 
 body {
-	background-color: #B31B1B;
-	color: #FFF;
 	font-family: "Source Sans Pro",sans-serif;
+    margin: 0;
 }
 
-.hasierako-kaxa .nire-argazkia {
+.hasiera {
+    height: 100vh;
+	text-align: center;
+    background-color: #B31B1B;
+	color: #FFF;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    position: relative;
+}
+.hasiera::after {
+    display:block;
+    position:fixed;
+}
+.hasiera .nire-argazkia {
 	border-radius: 50%;
 }
-.hasierako-kaxa .nire-izen-abizenak {
+.hasiera .nire-izen-abizenak {
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
-.hasierako-kaxa .nire-ezizena {
+.hasiera .nire-ezizena {
 	margin-top: 0px;
 }
-.hasierako-kaxa {
-	position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-	text-align: center;
-}
-.hasierako-kaxa .kontuak img {
+.hasiera .kontuak img {
 	margin-left: 5px;
 	margin-right: 5px;
 }
-.hasierako-kaxa .lantokiak {
+.hasiera .lantokiak {
     margin-top: 25px;
 }
-.hasierako-kaxa .lantokiak img.argia {
+.hasiera .lantokiak img.argia {
     width: 100px;
 }
-.hasierako-kaxa .lantokiak img.iametza {
+.hasiera .lantokiak img.iametza {
     margin-bottom: -12px;
     margin-left: 15px;
     width: 150px;
 }
 
 @media (max-width: 466px) {
-	.hasierako-kaxa .kontuak img.twitter {
+	.hasiera .kontuak img.twitter {
 	    width: 28px;
 	}
-	.hasierako-kaxa .kontuak img.github {
+	.hasiera .kontuak img.github {
 	    width: 26px;
 	}
-    .hasierako-kaxa .kontuak img.stackexchange {
+    .hasiera .kontuak img.stackexchange {
         width: 20px;
     }
-    .hasierako-kaxa .kontuak img.wikipedia {
+    .hasiera .kontuak img.wikipedia {
         width: 36px;
         margin-bottom: -6px;
     }
-	.hasierako-kaxa .kontuak img.launchpad {
+	.hasiera .kontuak img.launchpad {
 	    width: 24px;
 	}
-	.hasierako-kaxa .kontuak img.transifex {
+	.hasiera .kontuak img.transifex {
 		width: 26px;
 		margin-bottom: 2px;
 	}
-    .hasierako-kaxa .lantokiak img.argia {
+    .hasiera .lantokiak img.argia {
         width: 75px;
     }
-    .hasierako-kaxa .lantokiak img.iametza {
+    .hasiera .lantokiak img.iametza {
         width: 110px;
         margin-bottom: -9px;
     }
 }
 
 @media (min-width: 466px) {
-	.hasierako-kaxa .kontuak img.twitter {
+	.hasiera .kontuak img.twitter {
 	    width: 38px;
 	}
-	.hasierako-kaxa .kontuak img.github {
+	.hasiera .kontuak img.github {
 	    width: 36px;
 	}
-    .hasierako-kaxa .kontuak img.stackexchange {
+    .hasiera .kontuak img.stackexchange {
         width: 27px;
     }
-    .hasierako-kaxa .kontuak img.wikipedia {
+    .hasiera .kontuak img.wikipedia {
         width: 48px;
         margin-bottom: -9px;
     }
-	.hasierako-kaxa .kontuak img.launchpad {
+	.hasiera .kontuak img.launchpad {
 	    width: 34px;
 	}
-	.hasierako-kaxa .kontuak img.transifex {
+	.hasiera .kontuak img.transifex {
 		width: 36px;
 		margin-bottom: 2px;
 	}
 }
-@media (max-width: 600px) {
-    .hasierako-kaxa {
-        width: 80%;
-    }
-}
-@media (min-width: 600px) {
-    .hasierako-kaxa {
-        width: auto;
-    }
-}
 @media (max-width: 768px) {
-	.hasierako-kaxa .nire-izen-abizenak {
+	.hasiera .nire-izen-abizenak {
 		font-size: 1.5rem;
 	}
-	.hasierako-kaxa .nire-ezizena {
+	.hasiera .nire-ezizena {
 		font-size: 1rem;
 		margin-bottom: 20px;
 	}
 }
 @media (min-width: 768px) {
-	.hasierako-kaxa .nire-izen-abizenak {
+	.hasiera .nire-izen-abizenak {
 		font-size: 2rem;
 	}
-	.hasierako-kaxa .nire-ezizena {
+	.hasiera .nire-ezizena {
 		font-size: 1.5rem;
 		margin-bottom: 20px;
 	}
 }
 @media (min-width: 992px) {
-	.hasierako-kaxa .nire-izen-abizenak {
+	.hasiera .nire-izen-abizenak {
 		font-size: 2.5rem;
 	}
-	.hasierako-kaxa .nire-ezizena {
+	.hasiera .nire-ezizena {
 		font-size: 2rem;
 		margin-bottom: 40px;
 	}
 }
 @media (min-width: 1200px) {
-	.hasierako-kaxa .nire-izen-abizenak {
+	.hasiera .nire-izen-abizenak {
 		font-size: 3.5rem;
 	}
-	.hasierako-kaxa .nire-ezizena {
+	.hasiera .nire-ezizena {
 		font-size: 2.5rem;
 	}
+}
+.proiektuak {
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+    display: block;
+    position: relative;
+}
+.proiektuak .proiektua {
+    width: 50%;
+    float: left;
+}
+.proiektuak .proiektua .barrukoa {
+    width: 50%;
+    margin: 0 auto;
+}
+.proiektuak .proiektua .barrukoa .irudia {
+    float: left;
+    width: 200px;
+    padding: 15px;
+}
+.proiektuak .proiektua .barrukoa .irudia img {
+    max-width: 100%;
+}
+.proiektuak .proiektua .barrukoa .testuak {
+    text-align: left;
+    padding: 10px;
 }
