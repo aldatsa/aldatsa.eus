@@ -140,31 +140,31 @@ body {
     max-width: 100%;
     margin: 0 auto;
 }
-.proiektuak {
+.proiektuak-atala .proiektuak {
     background-color: #fff;
     color: #333;
     text-align: center;
     display: grid;
     position: relative;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
+    grid-gap: 40px;
     grid-auto-rows: minmax(100px, auto);
 }
-.proiektuak .proiektua {
+.proiektuak-atala .proiektuak .proiektua {
 
 }
-.proiektuak .proiektua .barrukoa {
+.proiektuak-atala .proiektuak .proiektua .barrukoa {
     margin: 0 auto;
 }
-.proiektuak .proiektua .barrukoa .irudia {
+.proiektuak-atala .proiektuak .proiektua .barrukoa .irudia {
     float: left;
     width: 200px;
     padding: 15px;
 }
-.proiektuak .proiektua .barrukoa .irudia img {
+.proiektuak-atala .proiektuak .proiektua .barrukoa .irudia img {
     max-width: 100%;
 }
-.proiektuak .proiektua .barrukoa .testuak {
+.proiektuak-atala .proiektuak .proiektua .barrukoa .testuak {
     text-align: left;
     padding: 10px;
 }
