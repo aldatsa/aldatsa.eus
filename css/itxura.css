@@ -152,6 +152,9 @@ body {
     margin: 0 auto;
     padding: 0 20px;
 }
+.proiektuak-atala a {
+    color: #B31B1B;
+}
 .proiektuak-atala .proiektuak {
     background-color: #fff;
     color: #333;
@@ -163,7 +166,6 @@ body {
     grid-auto-rows: minmax(100px, auto);
 }
 .proiektuak-atala .proiektuak .proiektua {
-
 }
 .proiektuak-atala .proiektuak .proiektua .barrukoa {
     margin: 0 auto;
@@ -182,8 +184,28 @@ body {
 }
 .proiektuak-atala .proiektuak .proiektua .barrukoa .testuak h2 {
     margin-top: 0px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #B31B1B;
+    display: inline-block;
 }
-
+.proiektuak-atala .proiektuak .proiektua .barrukoa .testuak .azalpena {
+    margin-bottom: 10px;
+}
+.proiektuak-atala .proiektuak .proiektua .barrukoa .testuak .erabilitako-teknologiak a {
+    padding: 0px 5px;
+}
+.proiektuak-atala .proiektuak .proiektua .barrukoa .botoiak .botoia {
+    border: 1px solid #B31B1B;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #B31B1B;
+    margin: 10px;
+}
+.proiektuak-atala .proiektuak .proiektua .barrukoa .botoiak .botoia a {
+    color: #fff;
+    text-decoration: none;
+}
 @media (max-width: 992px) {
     .proiektuak-atala .proiektuak .proiektua .barrukoa .irudia {
         width: 100%;
