@@ -135,19 +135,25 @@ body {
 		font-size: 2.5rem;
 	}
 }
+.proiektuak-atala {
+    width: 1300px;
+    max-width: 100%;
+    margin: 0 auto;
+}
 .proiektuak {
     background-color: #fff;
     color: #333;
     text-align: center;
-    display: block;
+    display: grid;
     position: relative;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
 }
 .proiektuak .proiektua {
-    width: 50%;
-    float: left;
+
 }
 .proiektuak .proiektua .barrukoa {
-    width: 50%;
     margin: 0 auto;
 }
 .proiektuak .proiektua .barrukoa .irudia {
