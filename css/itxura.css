@@ -3,9 +3,20 @@
   src: url("../fonts/SourceSansPro-Regular.otf") format("opentype");
 }
 
+html {
+    font-size: 62.5%;
+    font-family: "Source Sans Pro",sans-serif;
+}
 body {
-	font-family: "Source Sans Pro",sans-serif;
     margin: 0;
+    font-size: 1.6rem;
+}
+
+.atal-burua {
+    font-size: 3.2rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 50px;
 }
 
 .hasiera {
@@ -102,43 +113,44 @@ body {
 }
 @media (max-width: 768px) {
 	.hasiera .nire-izen-abizenak {
-		font-size: 1.5rem;
+		font-size: 2.4rem;
 	}
 	.hasiera .nire-ezizena {
-		font-size: 1rem;
+		font-size: 1.6rem;
 		margin-bottom: 20px;
 	}
 }
 @media (min-width: 768px) {
 	.hasiera .nire-izen-abizenak {
-		font-size: 2rem;
+		font-size: 3.2rem;
 	}
 	.hasiera .nire-ezizena {
-		font-size: 1.5rem;
+		font-size: 2.4rem;
 		margin-bottom: 20px;
 	}
 }
 @media (min-width: 992px) {
 	.hasiera .nire-izen-abizenak {
-		font-size: 2.5rem;
+		font-size: 4.0rem;
 	}
 	.hasiera .nire-ezizena {
-		font-size: 2rem;
+		font-size: 2.2rem;
 		margin-bottom: 40px;
 	}
 }
 @media (min-width: 1200px) {
 	.hasiera .nire-izen-abizenak {
-		font-size: 3.5rem;
+		font-size: 5.6rem;
 	}
 	.hasiera .nire-ezizena {
-		font-size: 2.5rem;
+		font-size: 4.0rem;
 	}
 }
 .proiektuak-atala {
     width: 1300px;
     max-width: 100%;
     margin: 0 auto;
+    padding: 0 20px;
 }
 .proiektuak-atala .proiektuak {
     background-color: #fff;
@@ -168,6 +180,20 @@ body {
     text-align: left;
     padding: 10px;
 }
-.proiektuak .proiektua .barrukoa .testuak h2 {
+.proiektuak-atala .proiektuak .proiektua .barrukoa .testuak h2 {
     margin-top: 0px;
+}
+
+@media (max-width: 992px) {
+    .proiektuak-atala .proiektuak .proiektua .barrukoa .irudia {
+        width: 100%;
+    }
+    .proiektuak-atala .proiektuak .proiektua .barrukoa .irudia img {
+        max-width: 60%;
+    }
+}
+@media (max-width: 600px) {
+    .proiektuak-atala .proiektuak {
+        grid-template-columns: 1fr;
+    }
 }
