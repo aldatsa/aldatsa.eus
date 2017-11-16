@@ -10,6 +10,7 @@ html {
 body {
     margin: 0;
     font-size: 1.6rem;
+    background-color: #F7E8E8;
 }
 
 .atal-burua {
@@ -161,7 +162,6 @@ body {
     color: #B31B1B;
 }
 .proiektuak-atala .proiektuak {
-    background-color: #fff;
     color: #333;
     text-align: center;
     display: grid;
