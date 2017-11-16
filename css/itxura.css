@@ -278,3 +278,48 @@ body {
     width: 250px;
     margin: 0 auto;
 }
+.artikuluak-atala {
+    margin-bottom: 50px;
+}
+.artikuluak-atala .artikuluak .artikulua::after {
+    content: "";
+    border-bottom: 1px solid #B31B1B;
+    display: block;
+    margin: 30px 0px;
+
+}
+.artikuluak-atala .artikuluak .artikulua .irudia {
+    width: 275px;
+    float: left;
+    margin-right: 30px;
+}
+.artikuluak-atala .artikuluak .artikulua .irudia img {
+    max-width: 100%;
+}
+.artikuluak-atala .artikuluak .artikulua .testuak .izenburua {
+    font-size: 2.4rem;
+}
+.artikuluak-atala .artikuluak .artikulua .testuak .izenburua a {
+    color: #333;
+    text-decoration: none;
+}
+.artikuluak-atala .artikuluak .artikulua .testuak .data {
+    margin: 5px 0px;
+}
+.artikuluak-atala .artikuluak .artikulua .testuak .sarrera {
+    font-size: 1.8rem;
+}
+.artikuluak-atala .artikulu-guztiak {
+    text-align: center;
+}
+.artikuluak-atala .artikulu-guztiak a {
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #B31B1B;
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #B31B1B;
+    margin: 10px;
+    font-size: 2.2rem;
+}
