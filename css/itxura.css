@@ -213,7 +213,7 @@ body {
     color: #fff;
     text-decoration: none;
 }
-@media (max-width: 992px) {
+@media (max-width: 1105px) {
     .proiektuak-atala .proiektuak .proiektua .barrukoa .irudia {
         width: 100%;
     }
