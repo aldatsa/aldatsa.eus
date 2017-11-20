@@ -292,6 +292,7 @@ body {
 }
 .artikuluak-atala {
     margin-bottom: 50px;
+    padding: 0px 20px;
 }
 .artikuluak-atala .artikuluak .artikulua::after {
     content: "";
