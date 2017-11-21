@@ -1,0 +1,23 @@
+{
+  "name": "aldatsa.eus",
+  "version": "1.0.0",
+  "description": "Personal website of Asier Iturralde Sarasolaren webgune pertsonala",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --output-style compressed -o dist/css src/scss"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aldatsa/aldatsa.github.io.git"
+  },
+  "author": "Asier Iturralde Sarasola",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/aldatsa/aldatsa.github.io/issues"
+  },
+  "homepage": "https://github.com/aldatsa/aldatsa.github.io#readme",
+  "devDependencies": {
+    "node-sass": "^4.7.2"
+  }
+}
