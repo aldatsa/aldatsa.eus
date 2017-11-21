@@ -7,6 +7,7 @@ html {
     font-size: 62.5%;
     font-family: "Source Sans Pro",sans-serif;
 }
+
 body {
     margin: 0;
     font-size: 1.6rem;
@@ -28,124 +29,125 @@ body {
     flex-flow: column;
     justify-content: center;
     position: relative;
-}
-.hasiera::after {
-    display:block;
-    position:fixed;
-}
-.hasiera .nire-argazkia {
-	border-radius: 50%;
-}
-.hasiera .nire-izen-abizenak {
-	margin-top: 10px;
-	margin-bottom: 10px;
-}
-.hasiera .nire-ezizena {
-	margin-top: 0px;
-}
-.hasiera .kontuak img {
-	margin-left: 5px;
-	margin-right: 5px;
-}
-.hasiera .lantokiak {
-    margin-top: 25px;
-}
-.hasiera .lantokiak img.argia {
-    width: 100px;
-}
-.hasiera .lantokiak img.iametza {
-    margin-bottom: -12px;
-    margin-left: 15px;
-    width: 150px;
+
+    &::after {
+        display:block;
+        position:fixed;
+    }
+    .nire-argazkia {
+    	border-radius: 50%;
+    }
+    .nire-izen-abizenak {
+    	margin-top: 10px;
+    	margin-bottom: 10px;
+
+        @media (max-width: 768px) {
+        	font-size: 2.4rem;
+        }
+        @media (min-width: 768px) {
+        	font-size: 3.2rem;
+        }
+        @media (min-width: 992px) {
+        	font-size: 4.0rem;
+        }
+        @media (min-width: 1200px) {
+        	font-size: 5.6rem;
+        }
+    }
+    .nire-ezizena {
+    	margin-top: 0px;
+
+        @media (max-width: 768px) {
+        	font-size: 1.6rem;
+        	margin-bottom: 20px;
+        }
+        @media (min-width: 768px) {
+        	font-size: 2.4rem;
+        	margin-bottom: 20px;
+        }
+        @media (min-width: 992px) {
+        	font-size: 2.2rem;
+        	margin-bottom: 40px;
+        }
+        @media (min-width: 1200px) {
+        	font-size: 4.0rem;
+        }
+    }
+    .kontuak {
+
+        img {
+        	margin-left: 5px;
+        	margin-right: 5px;
+
+            @media (max-width: 466px) {
+            	&.twitter {
+            	    width: 28px;
+            	}
+            	&.github {
+            	    width: 26px;
+            	}
+                &.stackexchange {
+                    width: 20px;
+                }
+                &.wikipedia {
+                    width: 36px;
+                    margin-bottom: -6px;
+                }
+            	&.launchpad {
+            	    width: 24px;
+            	}
+            	&.transifex {
+            		width: 26px;
+            		margin-bottom: 2px;
+            	}
+            }
+            @media (min-width: 466px) {
+            	&.twitter {
+            	    width: 38px;
+            	}
+            	&.github {
+            	    width: 36px;
+            	}
+                &.stackexchange {
+                    width: 27px;
+                }
+                &.wikipedia {
+                    width: 48px;
+                    margin-bottom: -9px;
+                }
+            	&.launchpad {
+            	    width: 34px;
+            	}
+            	&.transifex {
+            		width: 36px;
+            		margin-bottom: 2px;
+            	}
+            }
+        }
+    }
+    .lantokiak {
+        margin-top: 25px;
+
+        img.argia {
+            width: 100px;
+
+            @media (max-width: 466px) {
+                width: 75px;
+            }
+        }
+        img.iametza {
+            margin-bottom: -12px;
+            margin-left: 15px;
+            width: 150px;
+
+            @media (max-width: 466px) {
+                width: 110px;
+                margin-bottom: -9px;
+            }
+        }
+    }
 }
 
-@media (max-width: 466px) {
-	.hasiera .kontuak img.twitter {
-	    width: 28px;
-	}
-	.hasiera .kontuak img.github {
-	    width: 26px;
-	}
-    .hasiera .kontuak img.stackexchange {
-        width: 20px;
-    }
-    .hasiera .kontuak img.wikipedia {
-        width: 36px;
-        margin-bottom: -6px;
-    }
-	.hasiera .kontuak img.launchpad {
-	    width: 24px;
-	}
-	.hasiera .kontuak img.transifex {
-		width: 26px;
-		margin-bottom: 2px;
-	}
-    .hasiera .lantokiak img.argia {
-        width: 75px;
-    }
-    .hasiera .lantokiak img.iametza {
-        width: 110px;
-        margin-bottom: -9px;
-    }
-}
-
-@media (min-width: 466px) {
-	.hasiera .kontuak img.twitter {
-	    width: 38px;
-	}
-	.hasiera .kontuak img.github {
-	    width: 36px;
-	}
-    .hasiera .kontuak img.stackexchange {
-        width: 27px;
-    }
-    .hasiera .kontuak img.wikipedia {
-        width: 48px;
-        margin-bottom: -9px;
-    }
-	.hasiera .kontuak img.launchpad {
-	    width: 34px;
-	}
-	.hasiera .kontuak img.transifex {
-		width: 36px;
-		margin-bottom: 2px;
-	}
-}
-@media (max-width: 768px) {
-	.hasiera .nire-izen-abizenak {
-		font-size: 2.4rem;
-	}
-	.hasiera .nire-ezizena {
-		font-size: 1.6rem;
-		margin-bottom: 20px;
-	}
-}
-@media (min-width: 768px) {
-	.hasiera .nire-izen-abizenak {
-		font-size: 3.2rem;
-	}
-	.hasiera .nire-ezizena {
-		font-size: 2.4rem;
-		margin-bottom: 20px;
-	}
-}
-@media (min-width: 992px) {
-	.hasiera .nire-izen-abizenak {
-		font-size: 4.0rem;
-	}
-	.hasiera .nire-ezizena {
-		font-size: 2.2rem;
-		margin-bottom: 40px;
-	}
-}
-@media (min-width: 1200px) {
-	.hasiera .nire-izen-abizenak {
-		font-size: 5.6rem;
-	}
-	.hasiera .nire-ezizena {
-		font-size: 4.0rem;
-	}
-}
 .edukiontzia {
     width: 1300px;
     max-width: 100%;
@@ -153,186 +155,212 @@ body {
 }
 .proiektuak-atala {
     margin-top: 60px;
-}
-.proiektuak-atala .atala-azalpena {
-    margin-bottom: 40px;
-    font-size: 1.8rem;
-    padding: 0px 15px;
-}
-.proiektuak-atala a {
-    color: #B31B1B;
-}
-.proiektuak-atala .proiektuak {
-    color: #333;
-    text-align: center;
-    display: grid;
-    position: relative;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 40px;
-    grid-auto-rows: minmax(100px, auto);
-}
-.proiektuak-atala .proiektuak .proiektua {
-}
-.proiektuak-atala .proiektuak .proiektua .barrukoa {
-    margin: 0 auto;
-    padding: 0 20px;
-}
-.proiektuak-atala .proiektuak .proiektua .barrukoa .irudia {
-    float: left;
-    width: 200px;
-    padding: 15px;
-}
-.proiektuak-atala .proiektuak .proiektua .barrukoa .irudia img {
-    max-width: 100%;
-}
-.proiektuak-atala .proiektuak .proiektua .barrukoa .testuak {
-    text-align: left;
-    padding: 10px;
-}
-.proiektuak-atala .proiektuak .proiektua .barrukoa .testuak h2 {
-    margin-top: 0px;
-    margin-bottom: 10px;
-    border-bottom: 2px solid #B31B1B;
-    display: inline-block;
-}
-.proiektuak-atala .proiektuak .proiektua .barrukoa .testuak .azalpena {
-    margin-bottom: 10px;
-}
-.proiektuak-atala .proiektuak .proiektua .barrukoa .testuak .erabilitako-teknologiak a {
-    padding: 0px 5px;
-}
-.proiektuak-atala .proiektuak .proiektua .barrukoa .botoiak .botoia {
-    border: 1px solid #B31B1B;
-    display: inline-block;
-    padding: 5px 10px;
-    border-radius: 5px;
-    background-color: #B31B1B;
-    margin: 10px;
-}
-.proiektuak-atala .proiektuak .proiektua .barrukoa .botoiak .botoia a {
-    color: #fff;
-    text-decoration: none;
-}
-@media (max-width: 1105px) {
-    .proiektuak-atala .proiektuak .proiektua .barrukoa .irudia {
-        width: 100%;
+
+    .atala-azalpena {
+        margin-bottom: 40px;
+        font-size: 1.8rem;
+        padding: 0px 15px;
     }
-    .proiektuak-atala .proiektuak .proiektua .barrukoa .irudia img {
-        max-width: 60%;
+    a {
+        color: #B31B1B;
+    }
+    .proiektuak {
+        color: #333;
+        text-align: center;
+        display: grid;
+        position: relative;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 40px;
+        grid-auto-rows: minmax(100px, auto);
+
+        @media (max-width: 650px) {
+            grid-template-columns: 1fr;
+        }
+        .proiektua {
+
+            .barrukoa {
+                margin: 0 auto;
+                padding: 0 20px;
+
+                .irudia {
+                    float: left;
+                    width: 200px;
+                    padding: 15px;
+
+                    @media (max-width: 1105px) {
+                        width: 100%;
+                    }
+                    img {
+                        max-width: 100%;
+
+                        @media (max-width: 1105px) {
+                            max-width: 60%;
+                        }
+                    }
+                }
+                .testuak {
+                    text-align: left;
+                    padding: 10px;
+
+                    h2 {
+                        margin-top: 0px;
+                        margin-bottom: 10px;
+                        border-bottom: 2px solid #B31B1B;
+                        display: inline-block;
+                    }
+                    .azalpena {
+                        margin-bottom: 10px;
+                    }
+                    .erabilitako-teknologiak a {
+                        padding: 0px 5px;
+                    }
+                }
+                .botoiak {
+
+                    .botoia {
+                        border: 1px solid #B31B1B;
+                        display: inline-block;
+                        padding: 5px 10px;
+                        border-radius: 5px;
+                        background-color: #B31B1B;
+                        margin: 10px;
+
+                        a {
+                            color: #fff;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
-@media (max-width: 650px) {
-    .proiektuak-atala .proiektuak {
-        grid-template-columns: 1fr;
-    }
-}
+
 .itzulpenak-atala {
     background-color: #B31B1B;
     color: #fff;
     padding-top: 40px;
     margin-top: 50px;
-}
-.itzulpenak-atala .atala-azalpena {
-    margin-bottom: 100px;
-    font-size: 1.8rem;
-    padding: 0px 15px;
-}
-.itzulpenak-atala .atala-azalpena a {
-    color: #fff;
-}
-.itzulpenak-atala .itzulpenak-proiektuak {
-    background-color: #C24848;
-}
-.itzulpenak-atala .itzulpenak-proiektuak .proiektuak {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: minmax(275px, auto);
-}
-@media (max-width: 1000px) {
-    .itzulpenak-atala .itzulpenak-proiektuak .proiektuak {
-        grid-template-columns: repeat(2, 1fr);
+
+    .atala-azalpena {
+        margin-bottom: 100px;
+        font-size: 1.8rem;
+        padding: 0px 15px;
+
+        a {
+            color: #fff;
+        }
+    }
+    .itzulpenak-proiektuak {
+        background-color: #C24848;
+
+        .proiektuak {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-auto-rows: minmax(275px, auto);
+
+            @media (max-width: 1000px) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            @media (max-width: 500px) {
+                grid-template-columns: 1fr;
+            }
+
+            .proiektua {
+                position: relative;
+                text-align: center;
+
+                .irudia {
+                    background-color: #C24848;
+                    border: 1px solid #C24848;
+                    border-radius: 50%;
+                    position: absolute;
+                    left: calc(50% - 60px);
+                    top: -60px;
+                    width: 120px;
+                    height: 120px;
+
+                    img {
+                        width: 80px;
+                        padding-top: 30px;
+                    }
+                }
+                .izenburua {
+                   margin-top: 60px;
+                   font-size: 2.4rem;
+                }
+                .banatzailea {
+                    margin: 20px auto 20px auto;
+                    width: 50px;
+                    border-bottom: 1px solid #B31B1B;
+                }
+                .azalpena {
+                    margin-bottom: 75px;
+                    width: 250px;
+                    margin: 0 auto;
+                }
+            }
+        }
     }
 }
-@media (max-width: 500px) {
-    .itzulpenak-atala .itzulpenak-proiektuak .proiektuak {
-        grid-template-columns: 1fr;
-    }
-}
-.itzulpenak-atala .itzulpenak-proiektuak .proiektuak .proiektua {
-    position: relative;
-    text-align: center;
-}
-.itzulpenak-atala .proiektuak .proiektua .irudia {
-    background-color: #C24848;
-    border: 1px solid #C24848;
-    border-radius: 50%;
-    position: absolute;
-    left: calc(50% - 60px);
-    top: -60px;
-    width: 120px;
-    height: 120px;
-}
-.itzulpenak-atala .proiektuak .proiektua .irudia img {
-    width: 80px;
-    padding-top: 30px;
-}
-.itzulpenak-atala .proiektuak .proiektua .izenburua {
-    margin-top: 60px;
-    font-size: 2.4rem;
-}
-.itzulpenak-atala .proiektuak .proiektua .banatzailea {
-    margin: 20px auto 20px auto;
-    width: 50px;
-    border-bottom: 1px solid #B31B1B;
-}
-.itzulpenak-atala .proiektuak .proiektua .azalpena {
-    margin-bottom: 75px;
-    width: 250px;
-    margin: 0 auto;
-}
+
 .artikuluak-atala {
     margin-bottom: 50px;
     padding: 0px 20px;
-}
-.artikuluak-atala .artikuluak .artikulua::after {
-    content: "";
-    border-bottom: 1px solid #B31B1B;
-    display: block;
-    margin: 30px 0px;
 
-}
-.artikuluak-atala .artikuluak .artikulua .irudia {
-    width: 275px;
-    float: left;
-    margin-right: 30px;
-}
-.artikuluak-atala .artikuluak .artikulua .irudia img {
-    max-width: 100%;
-}
-.artikuluak-atala .artikuluak .artikulua .testuak .izenburua {
-    font-size: 2.4rem;
-}
-.artikuluak-atala .artikuluak .artikulua .testuak .izenburua a {
-    color: #333;
-    text-decoration: none;
-}
-.artikuluak-atala .artikuluak .artikulua .testuak .data {
-    margin: 5px 0px;
-}
-.artikuluak-atala .artikuluak .artikulua .testuak .sarrera {
-    font-size: 1.8rem;
-}
-.artikuluak-atala .artikulu-guztiak {
-    text-align: center;
-}
-.artikuluak-atala .artikulu-guztiak a {
-    color: #fff;
-    text-decoration: none;
-    border: 1px solid #B31B1B;
-    display: inline-block;
-    padding: 10px 15px;
-    border-radius: 5px;
-    background-color: #B31B1B;
-    margin: 10px;
-    font-size: 2.2rem;
+    .artikuluak {
+
+        .artikulua {
+
+            &::after {
+                content: "";
+                border-bottom: 1px solid #B31B1B;
+                display: block;
+                margin: 30px 0px;
+
+            }
+            .irudia {
+                width: 275px;
+                float: left;
+                margin-right: 30px;
+
+                img {
+                    max-width: 100%;
+                }
+            }
+            .testuak {
+
+                .izenburua {
+                    font-size: 2.4rem;
+
+                    a {
+                        color: #333;
+                        text-decoration: none;
+                    }
+                }
+                .data {
+                    margin: 5px 0px;
+                }
+                .sarrera {
+                    font-size: 1.8rem;
+                }
+            }
+        }
+    }
+    .artikulu-guztiak {
+        text-align: center;
+
+        a {
+            color: #fff;
+            text-decoration: none;
+            border: 1px solid #B31B1B;
+            display: inline-block;
+            padding: 10px 15px;
+            border-radius: 5px;
+            background-color: #B31B1B;
+            margin: 10px;
+            font-size: 2.2rem;
+        }
+    }
 }
