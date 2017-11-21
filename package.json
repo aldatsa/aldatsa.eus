@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "scss": "node-sass --output-style compressed -o dist/css src/scss",
     "autoprefixer": "postcss -u autoprefixer -r dist/css/*",
-    "lint": "eslint src/js"
+    "lint": "eslint src/js",
+    "uglify": "mkdir -p dist/js && uglifyjs src/js/*.js -m -o dist/js/app.js"
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,7 @@
     "eslint": "^4.11.0",
     "eslint-config-google": "^0.9.1",
     "node-sass": "^4.7.2",
-    "postcss-cli": "^4.1.1"
+    "postcss-cli": "^4.1.1",
+    "uglify-js": "^3.1.10"
   }
 }
