@@ -10,7 +10,8 @@
     "lint": "eslint src/js",
     "uglify": "mkdir -p dist/js && uglifyjs src/js/*.js -m -o dist/js/app.js && uglifyjs src/js/*.js -m -c -o dist/js/app.min.js",
     "imagemin": "imagemin src/images dist/images -p",
-    "icons": "svgo -f src/images/icons &amp;&amp; mkdir -p dist/images && svg-sprite-generate -d src/images/icons -o dist/images/icons.svg"
+    "icons": "svgo -f src/images/icons &amp;&amp; mkdir -p dist/images && svg-sprite-generate -d src/images/icons -o dist/images/icons.svg",
+    "serve": "browser-sync start --server 'dist/' --files 'dist/css/*.css, dist/js/*.js'"
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,7 @@
   "homepage": "https://github.com/aldatsa/aldatsa.github.io#readme",
   "devDependencies": {
     "autoprefixer": "^7.1.6",
+    "browser-sync": "^2.18.13",
     "eslint": "^4.11.0",
     "eslint-config-google": "^0.9.1",
     "imagemin-cli": "^3.0.0",
