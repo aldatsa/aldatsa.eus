@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "scss": "node-sass --output-style compressed -o dist/css src/scss",
-    "autoprefixer": "postcss -u autoprefixer -r dist/css/*"
+    "autoprefixer": "postcss -u autoprefixer -r dist/css/*",
+    "lint": "eslint src/js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
   "homepage": "https://github.com/aldatsa/aldatsa.github.io#readme",
   "devDependencies": {
     "autoprefixer": "^7.1.6",
+    "eslint": "^4.11.0",
     "node-sass": "^4.7.2",
     "postcss-cli": "^4.1.1"
   }
