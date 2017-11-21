@@ -8,7 +8,9 @@
     "scss": "node-sass --output-style compressed -o dist/css src/scss",
     "autoprefixer": "postcss -u autoprefixer -r dist/css/*",
     "lint": "eslint src/js",
-    "uglify": "mkdir -p dist/js && uglifyjs src/js/*.js -m -o dist/js/app.js"
+    "uglify": "mkdir -p dist/js && uglifyjs src/js/*.js -m -o dist/js/app.js && uglifyjs src/js/*.js -m -c -o dist/js/app.min.js",
+    "imagemin": "imagemin src/images dist/images -p",
+    "icons": "svgo -f src/images/icons &amp;&amp; mkdir -p dist/images && svg-sprite-generate -d src/images/icons -o dist/images/icons.svg"
   },
   "repository": {
     "type": "git",
@@ -24,8 +26,11 @@
     "autoprefixer": "^7.1.6",
     "eslint": "^4.11.0",
     "eslint-config-google": "^0.9.1",
+    "imagemin-cli": "^3.0.0",
     "node-sass": "^4.7.2",
     "postcss-cli": "^4.1.1",
+    "svg-sprite-generator": "0.0.7",
+    "svgo": "^1.0.3",
     "uglify-js": "^3.1.10"
   }
 }
