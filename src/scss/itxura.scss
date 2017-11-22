@@ -325,6 +325,14 @@ body {
                 float: left;
                 margin-right: 30px;
 
+                @media (max-width: 800px) {
+                    width: 75%;
+                    float: none;
+                    margin: 0 auto;
+                }
+                @media (max-width: 600px) {
+                    width: 100%;
+                }
                 img {
                     max-width: 100%;
                 }
