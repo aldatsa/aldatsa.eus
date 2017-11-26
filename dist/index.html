@@ -13,9 +13,9 @@
     <body>
         <div class="hasiera">
             <div class="atalen-aingurak">
-                <a href="#proiektuak" class="aingura">Proiektuak</a>
-                <a href="#itzulpenak" class="aingura">Itzulpenak</a>
-                <a href="#artikuluak" class="aingura">Artikuluak</a>
+                <a href="#proiektuak" data-id-helburua="proiektuak" class="aingura">Proiektuak</a>
+                <a href="#itzulpenak" data-id-helburua="itzulpenak" class="aingura">Itzulpenak</a>
+                <a href="#artikuluak" data-id-helburua="artikuluak" class="aingura">Artikuluak</a>
             </div>
             <div>
                 <img alt="Asier Durangoko Azokako Kabi@ gunean #datraolat-en aurkezpenean" class="nire-argazkia" src="img/asier-kabia.png">
@@ -216,3 +216,24 @@
         </div>
     </body>
 </html>
+<script>
+(function() {
+    let aingurak = document.getElementsByClassName("aingura");
+
+    for (let i = 0; i < aingurak.length; i++) {
+
+        aingurak[i].addEventListener("click", function(event) {
+
+            event.preventDefault();
+
+            let helburua = document.getElementById(this.getAttribute("data-id-helburua"));
+
+            helburua.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+                inline: "nearest"
+            });
+        }, false);
+    }
+})();
+</script>
