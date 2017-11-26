@@ -34,6 +34,19 @@ body {
         display:block;
         position:fixed;
     }
+    .atalen-aingurak {
+        position: absolute;
+        top: 15px;
+        right: 30px;
+
+        .aingura {
+            color: #fff;
+            text-transform: uppercase;
+            margin-right: 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    }
     .nire-argazkia {
     	border-radius: 50%;
     }
