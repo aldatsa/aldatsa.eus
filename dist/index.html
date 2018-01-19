@@ -88,48 +88,18 @@
                 <div class="artikuluak-atala">
                     <h2 id="artikuluak" class="atal-burua">Artikuluak</h2>
                     <div class="artikuluak">
-                        <div class="artikulua">
+                        <div class="artikulua" v-for="artikulua in artikuluak">
                             <div class="irudia">
-                                <a target="_blank" href="https://www.iametza.eus/euskara/bloga/lortuko-ote-dugu-euskal-ikurren-emoji-ak-plataforma-ezagunenetan-erabilgarri-egotea">
-                                    <img src="img/blog/fun-with-basque-flags.jpg">
+                                <a target="_blank" href="{{artikulua.url}}">
+                                    <img v-bind:src="artikulua.irudia">
                                 </a>
                             </div>
                             <div class="testuak">
                                 <div class="izenburua">
-                                    <a target="_blank" href="https://www.iametza.eus/euskara/bloga/lortuko-ote-dugu-euskal-ikurren-emoji-ak-plataforma-ezagunenetan-erabilgarri-egotea">Lortuko ote dugu euskal ikurren emoji-ak plataforma ezagunenetan erabilgarri egotea?</a>
+                                    <a target="_blank" href="{{artikulua.url}}">{{artikulua.izenburua}}</a>
                                 </div>
-                                <div class="data">2017-10-31</div>
-                                <div class="sarrera">Artikulu honetan euskal ikurren emoji-en inguruan aspaldi honetan egon diren mugimenduen laburpena aurkituko duzu. Ba al zenekien ikurrina eta Nafarroako bandera baliozko emoji-ak direla? Whatsapp, Telegram, Facebook, Twitter eta abarrek nahi izanez gero inplementatu ditzakete gure ikurrak ere, teknikoki ez dago inongo eragozpenik.</div>
-                            </div>
-                            <div style="clear: both;"></div>
-                        </div>
-                        <div class="artikulua">
-                            <div class="irudia">
-                                <a target="_blank" href="https://www.iametza.eus/euskara/bloga/tolosaldean-zer-non-eta-birziklatu-jolasa-etbko-teknopolis-saioan">
-                                    <img src="img/blog/teknopolis-tolosaldean-zer-non.png">
-                                </a>
-                            </div>
-                            <div class="testuak">
-                                <div class="izenburua">
-                                    <a target="_blank" href="https://www.iametza.eus/euskara/bloga/tolosaldean-zer-non-eta-birziklatu-jolasa-etbko-teknopolis-saioan">Tolosaldean Zer Non eta Birziklatu jolasa ETBko Teknopolis saioan</a>
-                                </div>
-                                <div class="data">2017-10-14</div>
-                                <div class="sarrera">ETBn gaur eman duten <a href="http://www.eitb.eus/eu/telebista/programak/teknopolis/" target="_blank">Teknopolis</a> saioan plastikoaren erabilerak sortzen dituen arazoak, birziklapena eta ordezkatu dezaketen materialak izan dituzte hizpide. Mugikorrerako aplikazioei eskainitako "Apperitifa" atalean <a href="https://www.iametza.eus" target="_blank">iametza</a>k garatutako <a href="https://play.google.com/store/apps/details?id=com.iametza.TolosaldeanZerNon" target="_blank">Tolosaldean Zer Non</a> eta <a href="https://play.google.com/store/apps/details?id=com.iametza.birziklatujolasa" target="_blank">Birziklatu jolasa</a> agertu dira.</div>
-                            </div>
-                            <div style="clear: both;"></div>
-                        </div>
-                        <div class="artikulua">
-                            <div class="irudia">
-                                <a target="_blank" href="https://www.iametza.eus/euskara/bloga/firefox-eta-chrome-rako-labureus-gehigarri-berria-eta-datraolat-ek-etorkizuna-ziurtatuta">
-                                    <img src="img/blog/labur-eus-twitter-kaxa.jpg">
-                                </a>
-                            </div>
-                            <div class="testuak">
-                                <div class="izenburua">
-                                    <a target="_blank" href="https://www.iametza.eus/euskara/bloga/tolosaldean-zer-non-eta-birziklatu-jolasa-etbko-teknopolis-saioan">Tolosaldean Zer Non eta Birziklatu jolasa ETBko Teknopolis saioan</a>
-                                </div>
-                                <div class="data">2017-07-18</div>
-                                <div class="sarrera">Azken egunetan 2 gehigarri argitaratu ditugu. Lehena, <a href="https://www.domeinuak.eus/eu/" target="_blank">PuntuEUS Fundazioa</a>rentzat garatutako <a href="https://www.sarean.eus/labur-eus/" target="_blank">labur.eus</a> zerbitzuaren Firefox eta Chrome-ko gehigarri berria eta bestea, etorkizuna ziurtatzeko eraberritutako <a href="https://www.iametza.eus/euskara/bloga/datraolatekin-traolak-eta-erabiltzaile-izenak-naturalago" target="_blank">#datraolat.</a></div>
+                                <div class="data">{{artikulua.data}}</div>
+                                <div class="sarrera" v-html="artikulua.azalpena"></div>
                             </div>
                             <div style="clear: both;"></div>
                         </div>
@@ -254,6 +224,31 @@
                 izenburua: "CKEditor",
                 azalpena: "Weberako WYSIWYG testu-editorea",
                 irudia: "img/itzulpenak/ckeditor.png"
+            }],
+            artikuluak: [{
+                izenburua: "Euskaltzaindiaren izenen zerrendetan badira izen mistoak",
+                url: "https://www.iametza.eus/euskara/bloga/euskaltzaindiaren-izenen-zerrendetan-badira-izen-mistoak",
+                data: "2018-01-16",
+                azalpena: "Euskaltzaindiak 2001etik aurrera sexuaren araberako bereizketa finkatu zuen izenetan baina <a href='https://deklinabidea.ikaeuskaltegiak.eus/' target='_blank'>IKAren Deklinabidea aplikazioa</a> garatzen ari nintzela salbuespenak badirela konturatu nintzen. Badaude Euskaltzaindiaren gizonezkoen eta emakumezkoen ponte-izenen zerrendetan, bietan, agertzen diren izen mistoak.",
+                irudia: "img/blog/izen-mistoak.jpg"
+            }, {
+                izenburua: "Lortuko ote dugu euskal ikurren emoji-ak plataforma ezagunenetan erabilgarri egotea?",
+                url: "https://www.iametza.eus/euskara/bloga/lortuko-ote-dugu-euskal-ikurren-emoji-ak-plataforma-ezagunenetan-erabilgarri-egotea",
+                data: "2017-10-31",
+                azalpena: "Artikulu honetan euskal ikurren emoji-en inguruan aspaldi honetan egon diren mugimenduen laburpena aurkituko duzu. Ba al zenekien ikurrina eta Nafarroako bandera baliozko emoji-ak direla? Whatsapp, Telegram, Facebook, Twitter eta abarrek nahi izanez gero inplementatu ditzakete gure ikurrak ere, teknikoki ez dago inongo eragozpenik.",
+                irudia: "img/blog/fun-with-basque-flags.jpg"
+            }, {
+                izenburua: "Tolosaldean Zer Non eta Birziklatu jolasa ETBko Teknopolis saioan",
+                url: "https://www.iametza.eus/euskara/bloga/tolosaldean-zer-non-eta-birziklatu-jolasa-etbko-teknopolis-saioan",
+                data: "2017-10-14",
+                azalpena: "ETBn gaur eman duten <a href='http://www.eitb.eus/eu/telebista/programak/teknopolis/' target='_blank'>Teknopolis</a> saioan plastikoaren erabilerak sortzen dituen arazoak, birziklapena eta ordezkatu dezaketen materialak izan dituzte hizpide. Mugikorrerako aplikazioei eskainitako \"Apperitifa\" atalean <a href='https://www.iametza.eus' target='_blank'>iametza</a>k garatutako <a href='https://play.google.com/store/apps/details?id=com.iametza.TolosaldeanZerNon' target='_blank'>Tolosaldean Zer Non</a> eta <a href='https://play.google.com/store/apps/details?id=com.iametza.birziklatujolasa' target='_blank'>Birziklatu jolasa</a> agertu dira.",
+                irudia: "img/blog/teknopolis-tolosaldean-zer-non.png"
+            }, {
+                izenburua: "Firefox eta Chrome-rako labur.eus gehigarri berria eta #datraolat-ek etorkizuna ziurtatuta",
+                url: "https://www.iametza.eus/euskara/bloga/firefox-eta-chrome-rako-labureus-gehigarri-berria-eta-datraolat-ek-etorkizuna-ziurtatuta",
+                data: "2017-07-18",
+                azalpena: "Azken egunetan 2 gehigarri argitaratu ditugu. Lehena, <a href='https://www.domeinuak.eus/eu/'>PuntuEUS Fundazioa</a>rentzat garatutako <a href='https://www.sarean.eus/labur-eus/'>labur.eus</a> zerbitzuaren Firefox eta Chrome-ko gehigarri berria eta bestea, etorkizuna ziurtatzeko eraberritutako <a href='https://www.iametza.eus/euskara/bloga/datraolatekin-traolak-eta-erabiltzaile-izenak-naturalago'>#datraolat</a>.",
+                irudia: "img/blog/labur-eus-twitter-kaxa.jpg"
             }]
         }
     });
