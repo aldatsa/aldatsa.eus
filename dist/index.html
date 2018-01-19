@@ -72,37 +72,13 @@
                 <div class="itzulpenak-proiektuak">
                     <div class="edukiontzia">
                         <div class="proiektuak">
-                            <div class="proiektua">
+                            <div class="proiektua" v-for="itzulpena in itzulpenak">
                                 <div class="irudia">
-                                    <img src="img/itzulpenak/linux-mint.png">
+                                    <img v-bind:src="itzulpena.irudia">
                                 </div>
-                                <div class="izenburua">Linux Mint</div>
+                                <div class="izenburua">{{itzulpena.izenburua}}</div>
                                 <div class="banatzailea"></div>
-                                <div class="azalpena">GNU/Linux banaketa erabilienetako bat da</div>
-                            </div>
-                            <div class="proiektua">
-                                <div class="irudia">
-                                    <img src="img/itzulpenak/lxde.svg">
-                                </div>
-                                <div class="izenburua">LXDE</div>
-                                <div class="banatzailea"></div>
-                                <div class="azalpena">Errekurtso gutxiko ordenagailuetarako egokia den mahaigain ingurune arina</div>
-                            </div>
-                            <div class="proiektua">
-                                <div class="irudia">
-                                    <img src="img/itzulpenak/mate-desktop.png">
-                                </div>
-                                <div class="izenburua">MATE</div>
-                                <div class="banatzailea"></div>
-                                <div class="azalpena">GNOME 2 mahaigain ingurunearen jarraipena</div>
-                            </div>
-                            <div class="proiektua">
-                                <div class="irudia">
-                                    <img src="img/itzulpenak/ckeditor.png">
-                                </div>
-                                <div class="izenburua">CKEditor</div>
-                                <div class="banatzailea"></div>
-                                <div class="azalpena">Weberako WYSIWYG testu-editorea</div>
+                                <div class="azalpena">{{itzulpena.azalpena}}</div>
                             </div>
                         </div>
                     </div>
@@ -261,6 +237,23 @@
                 webgunea: {
                     url: "http://pongds.aldatsa.eus/index-eu.html"
                 }
+            }],
+            itzulpenak: [{
+                izenburua: "Linux Mint",
+                azalpena: "GNU/Linux banaketa erabilienetako bat",
+                irudia: "img/itzulpenak/linux-mint.png"
+            }, {
+                izenburua: "LXDE",
+                azalpena: "Errekurtso gutxiko ordenagailuetarako egokia den mahaigain ingurune arina",
+                irudia: "img/itzulpenak/lxde.svg"
+            }, {
+                izenburua: "MATE",
+                azalpena: "GNOME 2 mahaigain ingurunearen jarraipena",
+                irudia: "img/itzulpenak/mate-desktop.png"
+            }, {
+                izenburua: "CKEditor",
+                azalpena: "Weberako WYSIWYG testu-editorea",
+                irudia: "img/itzulpenak/ckeditor.png"
             }]
         }
     });
