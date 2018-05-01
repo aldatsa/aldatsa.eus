@@ -75,9 +75,13 @@
                         <div class="proiektuak">
                             <div class="proiektua" v-for="itzulpena in itzulpenak">
                                 <div class="irudia">
-                                    <img v-bind:src="itzulpena.irudia">
+                                    <a target="_blank" v-bind:href="itzulpena.url">
+                                        <img v-bind:src="itzulpena.irudia">
+                                    </a>
                                 </div>
-                                <div class="izenburua">{{itzulpena.izenburua}}</div>
+                                <div class="izenburua">
+                                    <a target="_blank" v-bind:href="itzulpena.url">{{itzulpena.izenburua}}</a>
+                                </div>
                                 <div class="banatzailea"></div>
                                 <div class="azalpena">{{itzulpena.azalpena}}</div>
                             </div>
@@ -97,7 +101,7 @@
                             </div>
                             <div class="testuak">
                                 <div class="izenburua">
-                                    <a target="_blank" href="{{artikulua.url}}">{{artikulua.izenburua}}</a>
+                                    <a target="_blank" v-bind:href="artikulua.url">{{artikulua.izenburua}}</a>
                                 </div>
                                 <div class="data">{{artikulua.data}}</div>
                                 <div class="sarrera" v-html="artikulua.azalpena"></div>
@@ -212,21 +216,37 @@
             itzulpenak: [{
                 izenburua: "Linux Mint",
                 azalpena: "GNU/Linux banaketa erabilienetako bat",
-                irudia: "img/itzulpenak/linux-mint.png"
+                irudia: "img/itzulpenak/linux-mint.png",
+                url: "https://translations.launchpad.net/linuxmint/latest/+lang/eu"
             }, {
                 izenburua: "LXDE",
                 azalpena: "Errekurtso gutxiko ordenagailuetarako egokia den mahaigain ingurune arina",
-                irudia: "img/itzulpenak/lxde.svg"
+                irudia: "img/itzulpenak/lxde.svg",
+                url: "http://pootle.lxde.org/eu/"
             }, {
                 izenburua: "MATE",
                 azalpena: "GNOME 2 mahaigain ingurunearen jarraipena",
-                irudia: "img/itzulpenak/mate-desktop.png"
+                irudia: "img/itzulpenak/mate-desktop.png",
+                url: "https://www.transifex.com/mate/MATE/"
             }, {
                 izenburua: "CKEditor",
                 azalpena: "Weberako WYSIWYG testu-editorea",
-                irudia: "img/itzulpenak/ckeditor.png"
+                irudia: "img/itzulpenak/ckeditor.png",
+                url: "https://www.transifex.com/ckeditor/ckeditor/"
             }],
             artikuluak: [{
+                izenburua: "Mastodon sare sozial libre eta deszentralizatua: nola argitaratu edukiak RSStik software librea erabiliz",
+                url: "https://www.iametza.eus/euskara/bloga/euskaltzaindiaren-izenen-zerrendetan-badira-izen-mistoak",
+                data: "2018-04-12",
+                azalpena: "Duela aste batzuk ARGIA eta iametza Mastodon sare sozial libre eta deszentralizatua erabiltzen hasi ginen. Hau irakurtzen ari bazara ziur aski irakurriko zenuen albistearen berri ematen zuen <a href='http://www.argia.eus/blogak/argia/2018/04/04/argiak-mastodon-sare-sozial-libre-banatuan-kontua-sortu-du/' target='_blank'>ARGIAren barrenak blogeko artikulua</a>. Artikulu honetan software librea erabiliz RSS jario batetik toot-ak nola argitaratu azalduko dut.",
+                irudia: "img/blog/mastodon-iametza.jpg"
+            }, {
+                izenburua: "Errenteriako Udalaren ZU! arreta zerbitzu berriko barne erabilerarako softwarea garatu dugu",
+                url: "https://www.iametza.eus/euskara/bloga/errenteriako-udalaren-zu-arreta-zerbitzu-berriko-barne-erabilerarako-softwarea-garatu-dugu",
+                data: "2018-02-27",
+                azalpena: "Errenteriako Udalak ZU! Zure Udala herritarren arreta zerbitzu berria ireki du. Bere ezaugarriak leihatila bakarra, ordutegi zabalagoak, erosotasuna eta atentzio pertsonalizatua dira. Arreta zerbitzuko langileek iametzak neurrira garatutako barne kudeaketarako softwarea erabiltzen dute.",
+                irudia: "img/blog/zu-zure-udala-errenteriako-udala.jpg"
+            }, {
                 izenburua: "Euskaltzaindiaren izenen zerrendetan badira izen mistoak",
                 url: "https://www.iametza.eus/euskara/bloga/euskaltzaindiaren-izenen-zerrendetan-badira-izen-mistoak",
                 data: "2018-01-16",
