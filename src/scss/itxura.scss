@@ -39,6 +39,11 @@ body {
         top: 15px;
         right: 30px;
 
+        @media (max-width: 450px) {
+            right: 0px;
+            width: 100%;
+            text-align: center;
+        }
         .aingura {
             color: #fff;
             text-transform: uppercase;
